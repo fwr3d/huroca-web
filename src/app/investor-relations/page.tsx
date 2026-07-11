@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import TeamCard from '@/components/TeamCard'
 
 const stats = [
   { value: '$X.X', label: 'Revenue' },
@@ -155,28 +155,17 @@ export default function InvestorRelationsPage() {
         <div className="max-w-[1344px] mx-auto">
           <p className="text-[#bc9347] text-xs font-semibold tracking-[1px] mb-3">The Team</p>
           <h2 className="font-heading text-dark text-[40px] font-bold mb-14">The People Behind Huroca</h2>
-          <div className="grid grid-cols-3 gap-6">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="bg-card border border-cream/[.08] rounded-2xl px-6 py-7"
-              >
-                {member.photo ? (
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    width={64}
-                    height={64}
-                    className="w-16 h-16 rounded-full object-cover mb-4"
-                  />
-                ) : (
-                  <div className="w-16 h-16 rounded-full bg-dark/50 mb-4" />
-                )}
-                <h3 className="font-heading text-white font-bold text-base mb-1">{member.name}</h3>
-                <p className="text-white text-xs font-semibold mb-4">{member.role}</p>
-                <p className="text-white/60 text-[13px] leading-relaxed">{member.bio}</p>
-              </div>
-            ))}
+          <div className="flex flex-col gap-6">
+            <div className="flex gap-6">
+              {team.slice(0, 3).map((member) => (
+                <TeamCard key={member.name} {...member} />
+              ))}
+            </div>
+            <div className="flex gap-6">
+              {team.slice(3, 6).map((member) => (
+                <TeamCard key={member.name} {...member} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

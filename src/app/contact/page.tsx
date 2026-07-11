@@ -1,35 +1,6 @@
-'use client'
-
-import { useState } from 'react'
-
-const days = ['Sun', 'Mon', 'Tues', 'Wens', 'Thurs', 'Fri', 'Sat']
-
-// July 2026 starts on a Wednesday
-const julyCells: (number | null)[] = [
-  null, null, null, 1, 2, 3, 4,
-  5, 6, 7, 8, 9, 10, 11,
-  12, 13, 14, 15, 16, 17, 18,
-  19, 20, 21, 22, 23, 24, 25,
-  26, 27, 28, 29, 30, 31,
-]
-
-const disabledDays = [1, 2, 3, 6, 15, 16]
-
-const times = [
-  '9:00 AM',
-  '9:30 AM',
-  '10:00 AM',
-  '10:30 AM',
-  '1:00 PM',
-  '1:30 PM',
-  '2:00 PM',
-  '3:30 PM',
-]
+import CalEmbed from '@/components/CalEmbed'
 
 export default function ContactPage() {
-  const [selectedDay, setSelectedDay] = useState(7)
-  const [selectedTime, setSelectedTime] = useState('9:00 AM')
-
   return (
     <>
       {/* Hero + Contact form */}
@@ -94,7 +65,11 @@ export default function ContactPage() {
               <h3 className="font-heading text-white font-bold text-2xl mb-4">Contact Info</h3>
               <div className="space-y-4">
                 <div className="flex gap-3 items-start">
-                  <span className="text-xl leading-none">📧</span>
+                  <span className="flex items-center justify-center w-9 h-9 rounded-full bg-gold/15 shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-[18px] h-[18px] text-gold">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                  </span>
                   <p className="text-white text-base">
                     <span className="text-white/35 font-extrabold">Email:</span>
                     <br />
@@ -102,7 +77,12 @@ export default function ContactPage() {
                   </p>
                 </div>
                 <div className="flex gap-3 items-start">
-                  <span className="text-xl leading-none">📍</span>
+                  <span className="flex items-center justify-center w-9 h-9 rounded-full bg-gold/15 shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-[18px] h-[18px] text-gold">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                  </span>
                   <p className="text-white text-base">
                     <span className="text-white/35 font-extrabold">HQ:</span>
                     <br />
@@ -124,76 +104,7 @@ export default function ContactPage() {
             Pick a time that works for you. 30-minute intro, no commitment needed.
           </p>
 
-          <div className="bg-dark rounded-[32px] p-8 grid grid-cols-[1.3fr_1fr] gap-10">
-            {/* Calendar */}
-            <div>
-              <h3 className="font-heading text-cream font-bold text-2xl mb-6">July 2026</h3>
-              <div className="grid grid-cols-7 gap-1 text-center mb-2">
-                {days.map((d) => (
-                  <span key={d} className="text-cream/65 text-[10px] py-2">
-                    {d}
-                  </span>
-                ))}
-              </div>
-              <div className="grid grid-cols-7 gap-1 text-center">
-                {julyCells.map((day, i) => {
-                  if (day === null) return <span key={i} />
-                  const disabled = disabledDays.includes(day)
-                  const selected = day === selectedDay
-                  return (
-                    <button
-                      key={i}
-                      type="button"
-                      disabled={disabled}
-                      onClick={() => setSelectedDay(day)}
-                      className={`aspect-square rounded-full text-[10px] flex items-center justify-center transition-colors ${
-                        selected
-                          ? 'bg-gold text-black font-semibold'
-                          : disabled
-                            ? 'text-cream/20 cursor-default'
-                            : 'text-cream hover:bg-cream/10'
-                      }`}
-                    >
-                      {day}
-                    </button>
-                  )
-                })}
-              </div>
-              <p className="text-cream/40 text-[11px] mt-6 flex items-center gap-2">
-                <span>🌐</span> Mountain Time – Edmonton (MDT)
-              </p>
-            </div>
-
-            {/* Time slots */}
-            <div>
-              <h3 className="text-cream font-bold text-[15px]">Tuesday, July {selectedDay}</h3>
-              <p className="text-cream/40 text-xs mb-4">Select a time</p>
-              <div className="space-y-3">
-                {times.map((t) => {
-                  const selected = t === selectedTime
-                  return (
-                    <button
-                      key={t}
-                      type="button"
-                      onClick={() => setSelectedTime(t)}
-                      className={`w-full flex items-center justify-between px-4 py-3 rounded-lg border text-sm font-semibold transition-colors ${
-                        selected
-                          ? 'bg-gold/[.12] border-gold/30 text-white'
-                          : 'border-white/[.08] text-white hover:bg-white/5'
-                      }`}
-                    >
-                      <span>{t}</span>
-                      {selected && (
-                        <span className="px-3.5 py-1.5 bg-gold text-[#051a07] text-xs font-bold rounded-md">
-                          Confirm
-                        </span>
-                      )}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-          </div>
+          <CalEmbed />
         </div>
       </section>
     </>
