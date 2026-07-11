@@ -134,7 +134,7 @@ export default function SuccessStoriesPage() {
             {stories.map((s, i) => (
               <div
                 key={i}
-                className="bg-card border border-white/[.08] rounded-2xl overflow-hidden"
+                className="bg-card border border-white/[.08] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30"
               >
                 <div className="relative bg-deep h-[140px] p-4 flex items-start">
                   <span className="text-white text-[11px] font-bold">{s.badge}</span>

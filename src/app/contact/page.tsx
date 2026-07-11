@@ -1,4 +1,5 @@
 import CalEmbed from '@/components/CalEmbed'
+import ContactForm from '@/components/ContactForm'
 
 export default function ContactPage() {
   return (
@@ -16,40 +17,7 @@ export default function ContactPage() {
           </p>
 
           <div className="grid grid-cols-[1.7fr_1fr] gap-8">
-            {/* Form card */}
-            <div className="bg-white/[.03] rounded-[24px] p-8">
-              <h2 className="font-heading text-cream font-black text-base mb-6">Send us a message</h2>
-              <div className="grid grid-cols-2 gap-5 mb-5">
-                <label className="block">
-                  <span className="text-cream/65 text-sm mb-2 block">Your Name</span>
-                  <input
-                    type="text"
-                    className="w-full bg-white/[.02] border-[0.5px] border-white/25 rounded-lg px-4 py-3 text-cream text-sm placeholder:text-cream/30 focus:outline-none focus:border-gold/50"
-                  />
-                </label>
-                <label className="block">
-                  <span className="text-cream/65 text-sm mb-2 block">Company/Ranch</span>
-                  <input
-                    type="text"
-                    className="w-full bg-white/[.02] border-[0.5px] border-white/25 rounded-lg px-4 py-3 text-cream text-sm placeholder:text-cream/30 focus:outline-none focus:border-gold/50"
-                  />
-                </label>
-              </div>
-              <label className="block mb-5">
-                <span className="text-cream/65 text-sm mb-2 block">Email Address</span>
-                <input
-                  type="email"
-                  className="w-full bg-white/[.02] border-[0.5px] border-white/25 rounded-lg px-4 py-3 text-cream text-sm placeholder:text-cream/30 focus:outline-none focus:border-gold/50"
-                />
-              </label>
-              <label className="block">
-                <span className="text-gold text-sm mb-2 block">How Can we help</span>
-                <textarea
-                  rows={5}
-                  className="w-full bg-white/[.02] border-[0.5px] border-white/25 rounded-lg px-4 py-3 text-cream text-sm placeholder:text-cream/30 focus:outline-none focus:border-gold/50 resize-none"
-                />
-              </label>
-            </div>
+            <ContactForm />
 
             {/* Map + Info */}
             <div>
