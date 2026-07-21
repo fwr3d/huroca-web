@@ -1,6 +1,5 @@
 import CalEmbed from '@/components/CalEmbed'
 import ContactForm from '@/components/ContactForm'
-
 export default function ContactPage() {
   return (
     <>
