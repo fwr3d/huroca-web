@@ -52,7 +52,7 @@ export default function InvestorRelationsPage() {
       <section className="bg-dark pt-20 pb-[72px] px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-gold text-xs font-semibold tracking-[1px] mb-5">Investor Relations</p>
-          <h1 className="font-heading text-gold text-[64px] font-bold leading-[1.1] max-w-2xl mb-4">
+          <h1 className="font-heading text-gold text-[64px] font-bold leading-[1.1] max-w-3xl mb-4">
             Building the Future of<br />Cattle Ranching
           </h1>
           <p className="text-cream/60 text-base max-w-[620px] mb-8 leading-relaxed">
