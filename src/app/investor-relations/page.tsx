@@ -76,17 +76,6 @@ export default function InvestorRelationsPage() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-cream border-y border-white/10 py-9 px-12">
-        <div className="max-w-[1344px] mx-auto grid grid-cols-3">
-          {stats.map((s, i) => (
-            <div key={s.value} className={i < 2 ? 'border-r border-cream/10 pr-[60px]' : ''}>
-              <p className="text-[#124531] text-[34px] font-bold">{s.value}</p>
-              {s.label && <p className="text-[#124531] text-[13px] mt-1.5">{s.label}</p>}
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* The Opportunity */}
       <section className="bg-dark border-t border-white/[.08] py-20 px-12">
