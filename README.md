@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Huroca Web
+
+Marketing site for Huroca — cattle monitoring robotics, based in Lethbridge, Alberta.
+
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router)
+- TypeScript
+- [Tailwind CSS](https://tailwindcss.com) v4
+- Deployed on [Vercel](https://vercel.com)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site. Pages live under `src/app/`; edits hot-reload automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Description |
+|---|---|
+| `/` | Home |
+| `/about` | Company story, team, mentors & advisors, network |
+| `/technology` | Not yet built |
+| `/success-stories` | Customer results and testimonials |
+| `/investor-relations` | Pitch, team, press, investor CTA |
+| `/contact` | Contact form + booking |
 
-## Learn More
+## Design system
 
-To learn more about Next.js, take a look at the following resources:
+Colors, typography, and layout conventions: see Fred for the design-system reference doc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Integrations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Contact form** — submits to [Formspree](https://formspree.io) (`src/components/ContactForm.tsx`)
+- **Booking** — [Cal.com](https://cal.com) embed (`src/components/CalEmbed.tsx`)
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pushes to `master` deploy automatically via Vercel.
