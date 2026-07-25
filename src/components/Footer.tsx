@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="flex flex-col items-end gap-2">
           <div className="flex gap-5 text-[13px] text-gold">
             <a href="https://www.linkedin.com/company/huroca/" target="_blank" rel="noopener noreferrer" className="hover:text-gold/70 transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-gold/70 transition-colors">GitHub</a>
+            <a href="https://github.com/huroca" target="_blank" rel="noopener noreferrer" className="hover:text-gold/70 transition-colors">GitHub</a>
           </div>
           <p className="text-white/25 text-xs">© 2026 Huroca Technologies Inc. · Privacy · Terms</p>
         </div>

@@ -76,6 +76,22 @@ export default function InvestorRelationsPage() {
         </div>
       </section>
 
+      {/* Pitch Video */}
+      <section className="bg-dark border-t border-white/[.08] py-20 px-12">
+        <div className="max-w-[1344px] mx-auto">
+          <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">Watch Our Pitch</p>
+          <h2 className="font-heading text-gold text-[40px] font-bold mb-8">See Huroca in Two Minutes</h2>
+          <div className="rounded-[32px] overflow-hidden aspect-video max-w-[900px]">
+            <iframe
+              title="Huroca Pitch Video"
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Bka4rMnpHUA"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
 
       {/* The Opportunity */}
       <section className="bg-dark border-t border-white/[.08] py-20 px-12">
