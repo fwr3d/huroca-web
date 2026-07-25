@@ -1,13 +1,19 @@
-# Huroca Web
+<p align="center">
+  <img src="public/logo-full.svg" alt="Huroca" width="220" />
+</p>
 
-Marketing site for Huroca — cattle monitoring robotics, based in Lethbridge, Alberta.
+<h1 align="center">Huroca Website</h1>
 
-## Stack
+<p align="center">Marketing site for Huroca — cattle monitoring robotics, based in Lethbridge, Alberta.</p>
 
-- [Next.js](https://nextjs.org) (App Router)
-- TypeScript
-- [Tailwind CSS](https://tailwindcss.com) v4
-- Deployed on [Vercel](https://vercel.com)
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
+
+---
 
 ## Getting Started
 
@@ -16,7 +22,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site. Pages live under `src/app/`; edits hot-reload automatically.
+Open [http://localhost:3000](http://localhost:3000) to view the site. Pages live under `src/app/`; edits reload automatically.
 
 ## Pages
 
@@ -28,10 +34,6 @@ Open [http://localhost:3000](http://localhost:3000) to view the site. Pages live
 | `/success-stories` | Customer results and testimonials |
 | `/investor-relations` | Pitch, team, press, investor CTA |
 | `/contact` | Contact form + booking |
-
-## Design system
-
-Colors, typography, and layout conventions: see Fred for the design-system reference doc.
 
 ## Integrations
 
