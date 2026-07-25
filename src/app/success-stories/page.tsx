@@ -64,7 +64,7 @@ export default function SuccessStoriesPage() {
       {/* Hero */}
       <section className="bg-dark pt-[60px] pb-[52px] px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-cream text-[13px] font-semibold tracking-[0.5px] mb-3">Success Stories</p>
+          <p className="text-cream text-base font-semibold tracking-[0.5px] mb-3">Success Stories</p>
           <h1 className="font-heading text-gold text-[64px] font-bold leading-[70px] mb-3">
             Real Results
             <br />
@@ -91,7 +91,7 @@ export default function SuccessStoriesPage() {
       {/* Featured Story */}
       <section className="bg-dark border-t border-white/[.08] py-16 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-cream text-xs font-semibold tracking-[1px] mb-8">Featured Story</p>
+          <p className="text-cream text-base font-semibold tracking-[1px] mb-8">Featured Story</p>
           <div className="grid grid-cols-2 bg-card rounded-[20px] overflow-hidden">
             <div className="relative bg-deep px-12 py-10 flex flex-col justify-end min-h-[420px] gap-2.5">
               <span className="inline-flex items-center gap-1 text-cream text-[11px] font-bold">
@@ -128,7 +128,7 @@ export default function SuccessStoriesPage() {
       {/* More Stories */}
       <section className="bg-cream border-t border-white/[.08] py-16 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-dark text-sm font-semibold tracking-[1px] mb-4">More Stories</p>
+          <p className="text-dark text-base font-semibold tracking-[1px] mb-4">More Stories</p>
           <h2 className="font-heading text-dark text-4xl font-bold mb-12">Across the Prairies</h2>
           <div className="grid grid-cols-3 gap-6">
             {stories.map((s, i) => (
@@ -154,7 +154,7 @@ export default function SuccessStoriesPage() {
       {/* Testimonials */}
       <section className="bg-dark border-t border-white/[.08] py-16 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-cream text-sm font-semibold mb-4">What Ranchers Say</p>
+          <p className="text-cream text-base font-semibold mb-4">What Ranchers Say</p>
           <h2 className="font-heading text-gold text-4xl font-bold mb-12">In Their Own Words</h2>
           <div className="grid grid-cols-2 gap-6">
             {testimonials.map((t, i) => (
@@ -175,7 +175,7 @@ export default function SuccessStoriesPage() {
       {/* CTA */}
       <section className="bg-cream border-t border-white/[.08] py-20 px-12 text-center">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-dark text-xs font-semibold mb-4">Get Started</p>
+          <p className="text-dark text-base font-semibold mb-4">Get Started</p>
           <h2 className="font-heading text-dark text-[44px] font-bold mb-4">Ready to see results?</h2>
           <p className="text-dark/60 text-[15px] mb-8">
             Book a 30-minute intro call. No commitment needed.

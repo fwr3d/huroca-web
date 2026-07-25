@@ -7,7 +7,7 @@ export default function AboutPage() {
 
       <section className ="bg-dark px-12 py-24">
           <div className="max-w-[1344px] mx-auto">
-            <p className="text-gold text-xs font-semibold tracking-[1px] mb-5">Our Story</p>
+            <p className="text-gold text-base font-semibold tracking-[1px] mb-5">Our Story</p>
             <h1 className="font-heading text-gold text-[64px] font-bold leading-[1.1] max-w-[820px] mb-6">
             Built by Ranchers, Built for Ranchers
             </h1>
@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="bg-cream border-t border-white/10 px-12 py-[88px]">
         <div className="max-w-[1344px] mx-auto grid grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[#bc9347] text-xs font-semibold tracking-[1px] mb-3">Why Lethbridge</p>
+            <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-3">Why Lethbridge</p>
             <h2 className="font-heading text-dark text-[40px] font-bold">
             [Placeholder: why Lethbridge headline]
             </h2>
@@ -34,7 +34,7 @@ export default function AboutPage() {
       <section className="bg-dark border-t border-white/[.08] px-12 py-[88px]">
         <div className="max-w-[1344px] mx-auto">
 
-          <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">Our Journey</p>
+          <p className="text-gold text-base font-semibold tracking-[1px] mb-3">Our Journey</p>
           <h2 className="font-heading text-gold text-[40px] font-bold mb-14">
           [Placeholder: timeline headline]
           </h2>
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
       <section className="bg-cream border-t border-white/10 px-12 py-[88px]">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-[#bc9347] text-xs font-semibold tracking-[1px] mb-3">The Mission</p>
+          <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-3">The Mission</p>
           <h2 className="font-heading text-dark text-[40px] font-bold mb-14">
           [Placeholder: mission headline]
           </h2>
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
       <section className="bg-dark border-t border-white/[.08] py-20 px-12">
               <div className="max-w-[1344px] mx-auto">
-                <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">The Team</p>
+                <p className="text-gold text-base font-semibold tracking-[1px] mb-3">The Team</p>
                 <h2 className="font-heading text-gold text-[40px] font-bold mb-14">The People Behind Huroca</h2>
                 <div className="flex flex-col gap-6">
                   <div className="flex gap-6">
@@ -117,7 +117,7 @@ export default function AboutPage() {
 
       <section className="bg-dark border-t border-white/[.08] px-12 py-20">
         <div className="max-w-[1344px] mx-auto text-center">
-          <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">Mentors & Advisors</p>
+          <p className="text-gold text-base font-semibold tracking-[1px] mb-3">Mentors & Advisors</p>
           <h2 className="font-heading text-gold text-[40px] font-bold mb-4">Our Mentors & Advisors</h2>
           <p className="text-cream/70 text-base max-w-[720px] mx-auto mb-14 leading-relaxed">
             Bridging the gap between academic innovation and industry reality. Our advisory board combines deep research in Computer Science and Business with practical insights from the feedlot sector, ensuring our technology is not just theoretically sound, but built for the real world.
@@ -147,7 +147,7 @@ export default function AboutPage() {
 
       <section className="bg-cream border-t border-white/10 px-12 py-20">
         <div className="max-w-[1344px] mx-auto text-center">
-          <p className="text-[#bc9347] text-xs font-semibold tracking-[1px] mb-3">Our Network</p>
+          <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-3">Our Network</p>
           <h2 className="font-heading text-dark text-[40px] font-bold mb-12">Backed By a Trusted Network</h2>
           <div className="flex items-center justify-center gap-16">
             <div className="relative h-16 w-32">

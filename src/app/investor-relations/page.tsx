@@ -51,7 +51,7 @@ export default function InvestorRelationsPage() {
       {/* Hero */}
       <section className="bg-dark pt-20 pb-[72px] px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-gold text-xs font-semibold tracking-[1px] mb-5">Investor Relations</p>
+          <p className="text-gold text-base font-semibold tracking-[1px] mb-5">Investor Relations</p>
           <h1 className="font-heading text-gold text-[64px] font-bold leading-[1.1] max-w-3xl mb-4">
             Building the Future of<br />Cattle Ranching
           </h1>
@@ -62,7 +62,7 @@ export default function InvestorRelationsPage() {
           <div className="flex gap-4">
             <Link
               href="#"
-              className="px-7 py-3.5 bg-gold text-deep font-bold rounded-[10px] text-sm hover:bg-gold/90 transition-colors"
+              className="px-7 py-3.5 bg-gold text-dark font-bold rounded-[10px] text-sm hover:bg-gold/90 transition-colors"
             >
               View Pitch Deck
             </Link>
@@ -77,10 +77,10 @@ export default function InvestorRelationsPage() {
       </section>
 
       {/* Pitch Video */}
-      <section className="bg-dark border-t border-white/[.08] py-20 px-12">
+      <section className="bg-cream border-t border-white/[.08] py-20 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">Watch Our Pitch</p>
-          <h2 className="font-heading text-gold text-[40px] font-bold mb-8">See Huroca in Two Minutes</h2>
+          <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-3">Watch Our Pitch</p>
+          <h2 className="font-heading text-dark text-[40px] font-bold mb-8">See Huroca in Two Minutes</h2>
           <div className="rounded-[32px] overflow-hidden aspect-video max-w-[900px]">
             <iframe
               title="Huroca Pitch Video"
@@ -96,7 +96,7 @@ export default function InvestorRelationsPage() {
       {/* The Opportunity */}
       <section className="bg-dark border-t border-white/[.08] py-20 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">The Opportunity</p>
+          <p className="text-gold text-base font-semibold tracking-[1px] mb-3">The Opportunity</p>
           <h2 className="font-heading text-gold text-[40px] font-bold mb-3">Why Huroca, Why Now</h2>
           <p className="text-cream text-[15px] max-w-[600px] mb-12">
             Placeholder section subtitle. Describe the market context and timing in one to two sentences.
@@ -121,7 +121,7 @@ export default function InvestorRelationsPage() {
       {/* The Team */}
       <section className="bg-cream border-t border-white/[.08] py-20 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-[#bc9347] text-xs font-semibold tracking-[1px] mb-3">The Team</p>
+          <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-3">The Team</p>
           <h2 className="font-heading text-dark text-[40px] font-bold mb-14">The People Behind Huroca</h2>
           <div className="flex flex-col gap-6">
             <div className="flex gap-6">
@@ -141,7 +141,7 @@ export default function InvestorRelationsPage() {
       {/* Press */}
       <section className="bg-dark border-t border-white/[.08] py-20 px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-gold text-xs font-semibold tracking-[1px] mb-3">Press</p>
+          <p className="text-gold text-base font-semibold tracking-[1px] mb-3">Press</p>
           <h2 className="font-heading text-gold text-[40px] font-bold mb-14">In The News</h2>
           <div className="grid grid-cols-3 gap-6">
             {press.map((article, i) => (
@@ -168,7 +168,7 @@ export default function InvestorRelationsPage() {
       {/* CTA */}
       <section className="bg-cream border-t border-white/[.08] py-24 px-12 text-center">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-[#bc9347] text-xs font-semibold tracking-[1px] mb-4">Get In Touch</p>
+          <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-4">Get In Touch</p>
           <h2 className="font-heading text-[#124531] text-[44px] font-bold mb-4">Interested in Investing?</h2>
           <p className="text-dark text-[15px] max-w-[560px] mx-auto mb-8 leading-relaxed">
             Placeholder subtitle. Tell investors what to expect when they reach out.
@@ -176,7 +176,7 @@ export default function InvestorRelationsPage() {
           <div className="flex justify-center gap-4">
             <Link
               href="/contact"
-              className="px-8 py-3.5 bg-gold/[.83] text-deep font-bold text-sm rounded-[10px] hover:bg-gold transition-colors"
+              className="px-8 py-3.5 bg-gold/[.83] text-dark font-bold text-sm rounded-[10px] hover:bg-gold transition-colors"
             >
               Contact our team
             </Link>
