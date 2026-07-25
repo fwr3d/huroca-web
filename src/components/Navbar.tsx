@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="w-full h-[73px] bg-black/[.07] flex items-center justify-between px-12">
       <Link href="/" className="flex items-center">
-        <Image src="/logo-full.svg" alt="Huroca" width={114} height={37} className="h-6 w-auto" />
+        <Image src="/logo-full.svg" alt="Huroca" width={114} height={37} className="h-11 w-auto" />
       </Link>
       <nav>
         <ul className="flex gap-7 text-sm">
