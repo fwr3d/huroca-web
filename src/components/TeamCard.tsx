@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface TeamCardProps {
   name: string
@@ -14,6 +14,12 @@ export default function TeamCard({ name, role, bio, photo }: TeamCardProps) {
   const [display, setDisplay] = useState(bio)
   const [hovered, setHovered] = useState(false)
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+    }
+  }, [])
 
   function handleEnter() {
     setHovered(true)
