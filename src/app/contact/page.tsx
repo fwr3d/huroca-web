@@ -4,18 +4,18 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero + Contact form */}
-      <section className="bg-dark pt-8 pb-[100px] px-12">
+      <section className="bg-dark pt-8 pb-16 px-6 md:pb-[100px] md:px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-gold text-base mb-1">Contact Us</p>
-          <h1 className="font-heading text-gold text-[64px] font-black leading-[1.1] mb-6">
+          <h1 className="font-heading text-gold text-4xl md:text-[64px] font-black leading-[1.1] mb-6">
             Let&apos;s Talk
           </h1>
-          <p className="text-cream text-base max-w-[388px] mb-14">
+          <p className="text-cream text-base max-w-[388px] mb-10 md:mb-14">
             Whether you&apos;re a rancher, investor, or potential partner we&apos;d love to hear
             from you.
           </p>
 
-          <div className="grid grid-cols-[1.7fr_1fr] gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-[1.7fr_1fr] gap-8">
             <ContactForm />
 
             {/* Map + Info */}
@@ -63,11 +63,11 @@ export default function ContactPage() {
       </section>
 
       {/* Book a call */}
-      <section className="bg-cream py-20 px-12">
+      <section className="bg-cream py-14 px-6 md:py-20 md:px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-gold text-base mb-3">Book a call</p>
-          <h2 className="font-heading text-dark text-[64px] font-black leading-[1.1] mb-4">Schedule a time with our team</h2>
-          <p className="text-dark/60 text-base max-w-[336px] mb-12">
+          <h2 className="font-heading text-dark text-3xl md:text-[64px] font-black leading-[1.1] mb-4">Schedule a time with our team</h2>
+          <p className="text-dark/60 text-base max-w-[336px] mb-10 md:mb-12">
             Pick a time that works for you. 30-minute intro, no commitment needed.
           </p>
 

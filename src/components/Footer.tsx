@@ -11,13 +11,13 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black/[.07] px-20 py-10">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between">
-        <div className="flex flex-col gap-1.5">
+    <footer className="bg-black/[.07] px-6 py-10 md:px-20">
+      <div className="max-w-[1440px] mx-auto flex flex-col items-center gap-6 text-center md:flex-row md:items-center md:justify-between md:gap-4 md:text-left">
+        <div className="flex flex-col items-center gap-1.5 md:items-start">
           <Image src="/logo-full.svg" alt="Huroca" width={100} height={31} className="h-[50px] w-auto" />
           <p className="text-white/40 text-xs">Cattle Robotics · Lethbridge, Alberta</p>
         </div>
-        <ul className="flex gap-7 text-[13px] text-white/40">
+        <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px] text-white/40">
           {links.map(({ href, label }) => (
             <li key={href}>
               <Link href={href} className="hover:text-white/70 transition-colors">
@@ -26,7 +26,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col items-end gap-2">
+        <div className="flex flex-col items-center gap-2 md:items-end">
           <div className="flex gap-5 text-[13px] text-gold">
             <a href="https://www.linkedin.com/company/huroca/" target="_blank" rel="noopener noreferrer" className="hover:text-gold/70 transition-colors">LinkedIn</a>
             <a href="https://github.com/huroca" target="_blank" rel="noopener noreferrer" className="hover:text-gold/70 transition-colors">GitHub</a>

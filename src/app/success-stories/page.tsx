@@ -62,10 +62,10 @@ export default function SuccessStoriesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-dark pt-[60px] pb-[52px] px-12">
+      <section className="bg-dark pt-12 pb-10 px-6 md:pt-[60px] md:pb-[52px] md:px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-cream text-base font-semibold tracking-[0.5px] mb-3">Success Stories</p>
-          <h1 className="font-heading text-gold text-[64px] font-bold leading-[70px] mb-3">
+          <h1 className="font-heading text-gold text-4xl md:text-[64px] font-bold leading-[1.1] md:leading-[70px] mb-3">
             Real Results
             <br />
             Real Ranchers
@@ -77,11 +77,11 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-cream border-y border-white/10 py-9 px-12">
-        <div className="max-w-[1344px] mx-auto grid grid-cols-4">
+      <section className="bg-cream border-y border-white/10 py-9 px-6 md:px-12">
+        <div className="max-w-[1344px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-6">
           {stats.map((s, i) => (
-            <div key={s.value} className={`text-center ${i < 3 ? 'border-r border-white/10' : ''}`}>
-              <p className="text-dark text-[64px] font-bold">{s.value}</p>
+            <div key={s.value} className={`text-center ${i % 2 === 0 ? 'border-r border-white/10' : ''} ${i === 1 ? 'md:border-r md:border-white/10' : ''}`}>
+              <p className="text-dark text-4xl md:text-[64px] font-bold">{s.value}</p>
               <p className="text-dark/60 text-sm mt-2">{s.label}</p>
             </div>
           ))}
@@ -89,24 +89,24 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* Featured Story */}
-      <section className="bg-dark border-t border-white/[.08] py-16 px-12">
+      <section className="bg-dark border-t border-white/[.08] py-14 px-6 md:py-16 md:px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-cream text-base font-semibold tracking-[1px] mb-8">Featured Story</p>
-          <div className="grid grid-cols-2 bg-card rounded-[20px] overflow-hidden">
-            <div className="relative bg-deep px-12 py-10 flex flex-col justify-end min-h-[420px] gap-2.5">
+          <div className="grid grid-cols-1 md:grid-cols-2 bg-card rounded-[20px] overflow-hidden">
+            <div className="relative bg-deep px-8 py-10 md:px-12 flex flex-col justify-end min-h-[220px] md:min-h-[420px] gap-2.5">
               <span className="inline-flex items-center gap-1 text-cream text-[11px] font-bold">
                 ★ Featured
               </span>
               <h3 className="font-heading text-cream font-bold text-[28px]">Ranch Name</h3>
               <p className="text-cream/60 text-[13px]">Location · X,XXX head</p>
             </div>
-            <div className="px-12 py-10 flex flex-col justify-center gap-6">
+            <div className="px-8 py-10 md:px-12 flex flex-col justify-center gap-6">
               <p className="font-heading text-cream text-lg font-bold leading-normal">
                 &ldquo;Placeholder quote from the rancher goes here. Describe the result they
                 experienced with Huroca in one or two sentences.&rdquo;
               </p>
               <p className="text-cream/60 text-[13px]">Ranch Name</p>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-4">
                 <div className="bg-white/5 border border-white/[.08] rounded-[10px] px-5 py-4">
                   <p className="font-heading text-cream font-bold text-[28px]">xx%</p>
                   <p className="text-cream/50 text-[11px]">Stat Label</p>
@@ -126,11 +126,11 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* More Stories */}
-      <section className="bg-cream border-t border-white/[.08] py-16 px-12">
+      <section className="bg-cream border-t border-white/[.08] py-14 px-6 md:py-16 md:px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-dark text-base font-semibold tracking-[1px] mb-4">More Stories</p>
-          <h2 className="font-heading text-dark text-4xl font-bold mb-12">Across the Prairies</h2>
-          <div className="grid grid-cols-3 gap-6">
+          <h2 className="font-heading text-dark text-3xl md:text-4xl font-bold mb-10 md:mb-12">Across the Prairies</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {stories.map((s, i) => (
               <div
                 key={i}
@@ -152,11 +152,11 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-dark border-t border-white/[.08] py-16 px-12">
+      <section className="bg-dark border-t border-white/[.08] py-14 px-6 md:py-16 md:px-12">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-cream text-base font-semibold mb-4">What Ranchers Say</p>
-          <h2 className="font-heading text-gold text-4xl font-bold mb-12">In Their Own Words</h2>
-          <div className="grid grid-cols-2 gap-6">
+          <h2 className="font-heading text-gold text-3xl md:text-4xl font-bold mb-10 md:mb-12">In Their Own Words</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {testimonials.map((t, i) => (
               <div
                 key={i}
@@ -173,14 +173,14 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-cream border-t border-white/[.08] py-20 px-12 text-center">
+      <section className="bg-cream border-t border-white/[.08] py-16 px-6 md:py-20 md:px-12 text-center">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-dark text-base font-semibold mb-4">Get Started</p>
-          <h2 className="font-heading text-dark text-[44px] font-bold mb-4">Ready to see results?</h2>
+          <h2 className="font-heading text-dark text-3xl md:text-[44px] font-bold mb-4">Ready to see results?</h2>
           <p className="text-dark/60 text-[15px] mb-8">
             Book a 30-minute intro call. No commitment needed.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/contact"
               className="px-8 py-3.5 bg-gold text-dark font-bold text-sm rounded-[10px] hover:bg-gold/90 transition-colors"

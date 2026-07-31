@@ -3,10 +3,10 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <section className="bg-dark px-12 py-24">
+      <section className="bg-dark px-6 py-16 md:px-12 md:py-24">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-gold text-base font-semibold tracking-[1px] mb-5">Cattle Robotics</p>
-          <h1 className="font-heading text-gold text-[64px] font-bold leading-[1.1] max-w-[820px] mb-6">
+          <h1 className="font-heading text-gold text-4xl md:text-[64px] font-bold leading-[1.1] max-w-[820px] mb-6">
           Automated Care for Every Head of Cattle
           </h1>
           <p className="text-cream/70 text-lg max-w-[640px] leading-relaxed">
@@ -20,11 +20,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-cream px-12 py-20">
+      <section className="bg-cream px-6 py-16 md:px-12 md:py-20">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-[#bc9347] text-base font-semibold tracking-[1px] mb-3">What We Do</p>
-          <h2 className="font-heading text-dark text-[40px] font-bold mb-12">Built for the Realities of Ranching</h2>
-          <div className="grid grid-cols-3 gap-6">
+          <h2 className="font-heading text-dark text-3xl md:text-[40px] font-bold mb-10 md:mb-12">Built for the Realities of Ranching</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-card border border-cream/[.08] rounded-2xl px-7 py-8">
               <span className="inline-block px-3 py-1 bg-gold/15 text-gold text-[11px] font-semibold rounded-full mb-4">
                 [badge]
@@ -50,14 +50,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-dark px-12 py-24 text-center">
+      <section className="bg-dark px-6 py-16 md:px-12 md:py-24 text-center">
         <div className="max-w-[1344px] mx-auto">
           <p className="text-gold text-base font-semibold tracking-[1px] mb-4">Get Started</p>
-          <h2 className="font-heading text-gold text-[44px] font-bold mb-4">See Huroca on Your Ranch</h2>
+          <h2 className="font-heading text-gold text-3xl md:text-[44px] font-bold mb-4">See Huroca on Your Ranch</h2>
           <p className="text-cream text-[15px] max-w-[480px] mx-auto mb-8 leading-relaxed">
             Book a 30-minute intro call. No commitment needed.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact" className="px-7 py-3.5 bg-gold text-dark font-bold rounded-[10px] text-sm hover:bg-gold/90 transition-colors">
               Book a Demo
             </Link>
