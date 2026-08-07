@@ -27,21 +27,13 @@ const opportunities = [
 
 
 
-const press = [
+const updates = [
   {
-    publication: 'Publication Name',
-    date: 'Month YYYY',
-    headline: 'Placeholder headline or pull quote from the article goes here.',
-  },
-  {
-    publication: 'Publication Name',
-    date: 'Month YYYY',
-    headline: 'Placeholder headline or pull quote from the article goes here.',
-  },
-  {
-    publication: 'Publication Name',
-    date: 'Month YYYY',
-    headline: 'Placeholder headline or pull quote from the article goes here.',
+    badge: '1st Place · Student Category',
+    source: 'LinkedIn · University of Lethbridge',
+    headline: 'Huroca Wins the 2026 Launch Point Pitch Competition',
+    body: 'Huroca — built by U of L students Emilio Hurtado, Chandra Suryadevara, and Naveen Vadlamudi — took first place in the student category at Launch Point 2026, judged live in front of the Lethbridge startup community.',
+    href: 'https://www.linkedin.com/feed/update/urn:li:activity:7438256459064418304/',
   },
 ]
 
@@ -151,28 +143,34 @@ export default function InvestorRelationsPage() {
 
       <PartnersNetwork />
 
-      {/* Press */}
+      {/* Updates */}
       <section className="bg-dark border-t border-white/[.08] py-14 px-6 md:py-20 md:px-12">
         <div className="max-w-[1344px] mx-auto">
-          <p className="text-gold text-base font-semibold tracking-[1px] mb-3">Press</p>
-          <h2 className="font-heading text-gold text-3xl md:text-[40px] font-bold mb-10 md:mb-14">In The News</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {press.map((article, i) => (
-              <div
+          <p className="text-gold text-base font-semibold tracking-[1px] mb-3">Updates</p>
+          <h2 className="font-heading text-gold text-3xl md:text-[40px] font-bold mb-10 md:mb-14">Milestones & Updates</h2>
+          <div className="flex flex-col gap-6">
+            {updates.map((update, i) => (
+              <a
                 key={i}
-                className="bg-card border border-cream/[.08] rounded-2xl p-7"
+                href={update.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-card border border-cream/[.08] rounded-2xl p-7 md:p-9 max-w-[640px] hover:border-gold/30 transition-colors"
               >
-                <div className="flex justify-between items-start mb-5">
-                  <span className="text-gold text-[13px] font-bold">{article.publication}</span>
-                  <span className="text-cream/40 text-xs">{article.date}</span>
-                </div>
-                <p className="font-heading text-cream font-bold text-lg leading-[1.3] mb-8">
-                  {article.headline}
+                <span className="inline-block px-3 py-1 bg-gold/15 text-gold text-[11px] font-semibold rounded-full mb-4">
+                  {update.badge}
+                </span>
+                <p className="font-heading text-cream font-bold text-xl md:text-2xl leading-[1.3] mb-4">
+                  {update.headline}
                 </p>
-                <a href="#" className="text-gold text-[13px] font-semibold hover:text-gold/70 transition-colors">
-                  Read article →
-                </a>
-              </div>
+                <p className="text-cream/60 text-sm leading-relaxed mb-5">{update.body}</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-cream/40 text-xs">{update.source}</span>
+                  <span className="text-gold text-[13px] font-semibold hover:text-gold/70 transition-colors">
+                    View post →
+                  </span>
+                </div>
+              </a>
             ))}
           </div>
         </div>

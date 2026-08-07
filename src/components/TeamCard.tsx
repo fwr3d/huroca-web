@@ -48,43 +48,43 @@ export default function TeamCard({ name, role, bio, photo }: TeamCardProps) {
       onMouseLeave={handleLeave}
       style={{ flexGrow: hovered ? 2.4 : 1 }}
       className={`basis-0 min-w-0 bg-card border border-cream/[.08] rounded-2xl transition-all duration-300 ease-out overflow-hidden ${
-        hovered ? 'px-8 py-9' : 'px-6 py-7'
+        hovered ? 'px-9 py-10' : 'px-7 py-8'
       }`}
     >
       {photo ? (
         <Image
           src={photo}
           alt={name}
-          width={96}
-          height={96}
+          width={112}
+          height={112}
           className={`rounded-full object-cover mb-4 transition-all duration-300 ease-out ${
-            hovered ? 'w-24 h-24' : 'w-16 h-16'
+            hovered ? 'w-28 h-28' : 'w-20 h-20'
           }`}
         />
       ) : (
         <div
           className={`rounded-full bg-dark/50 mb-4 transition-all duration-300 ease-out ${
-            hovered ? 'w-24 h-24' : 'w-16 h-16'
+            hovered ? 'w-28 h-28' : 'w-20 h-20'
           }`}
         />
       )}
       <h3
         className={`font-heading text-white font-bold mb-1 whitespace-nowrap transition-all duration-300 ease-out ${
-          hovered ? 'text-xl' : 'text-base'
+          hovered ? 'text-2xl' : 'text-lg'
         }`}
       >
         {name}
       </h3>
       <p
         className={`text-white font-semibold mb-4 whitespace-nowrap transition-all duration-300 ease-out ${
-          hovered ? 'text-sm' : 'text-xs'
+          hovered ? 'text-base' : 'text-sm'
         }`}
       >
         {role}
       </p>
       <p
         className={`text-white/60 leading-relaxed transition-all duration-300 ease-out ${
-          hovered ? 'text-[15px]' : 'text-[13px]'
+          hovered ? 'text-base' : 'text-sm'
         }`}
       >
         {hovered ? display : bio}
